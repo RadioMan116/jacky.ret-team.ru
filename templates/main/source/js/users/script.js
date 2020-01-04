@@ -739,6 +739,10 @@ $(document).ready(function () {
 			// $('body').css('overflow','visible');
 			$('body').removeClass('fixed');
 		});
+		document.querySelectorAll('.dropdown-menu__item').forEach(element => {
+			let url = element.getAttribute('data-bg');
+			element.style.background = `url('${url}')`;
+		})
 	});
 	$(".js-menu-footer__title").click(function (event) {
 		if (
