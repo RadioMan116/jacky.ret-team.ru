@@ -28,10 +28,10 @@
 		margin-right: 4px;
 		margin-bottom: 3px;
 		padding: 5px 11px;
-		display: none;
+
 
 		a {
-			color: #394791;
+			color: #666;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 28px;
@@ -47,25 +47,21 @@
 		// 	margin-right: 0;
 		// }
 
-		&:hover {
-			border: 1px solid #334399;
-		}
 
-		&.active {
-			border: 1px solid #334399;
+		&.active,
+		&:hover {
+			border: 1px solid $base;
+			background-color: #F1F1F1;
 
 			a {
-				color: #394791;
-				font-family: Arial, sans-serif;
-				font-size: 14px;
-				font-weight: 700;
-				letter-spacing: 0.6px;
+				color: $base;
+				// font-family: Arial, sans-serif;
+				// font-size: 14px;
+				// font-weight: 700;
+				// letter-spacing: 0.6px;
 			}
 		}
 
-		&:hover {
-			background-color: rgba(238, 238, 238, 0.29);
-		}
 
 		&.button {
 			order: 2;
@@ -91,8 +87,8 @@
 
 	&__all {
 		border-radius: 3px;
-		border: 1px solid #394791;
-		color: #394791;
+		border: 1px solid #666666;
+		color: #333333;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -111,7 +107,7 @@
 	}
 
 	&.main-tags {
-		margin-bottom: 48px;
+		margin-bottom: 41px;
 		position: relative;
 	}
 

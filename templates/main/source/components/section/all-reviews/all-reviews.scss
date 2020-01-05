@@ -914,6 +914,14 @@
 			// background-position: 50%;
 			// background-size: 21px 20px;
 		}
+		.ratings__number{
+			 color: #333333;
+			 font-family: Arial;
+			 font-size: 14px;
+			 font-weight: 700;
+			 line-height: 24px;
+			 margin-left: 5px;
+		}
 	}
 
 	.reviews-list__col_desc {
@@ -958,14 +966,14 @@
 	}
 
 	.reviews-main__link {
-		color: #394791;
+		color: #333;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
 		border-radius: 3px;
-		border: 1px solid #394791;
+		border: 1px solid #666;
 		margin: 0 auto;
 		padding: 5px 13px;
 		text-decoration: none !important;
@@ -985,9 +993,9 @@
 
 
 	.swiper-button-prev {
-		background: url("../images/special-offers_prev.svg") 0/34px no-repeat;
+		background: url("../images/new-items_prev.png") 0/34px no-repeat;
 		position: absolute;
-		top: 68px;
+		top: 82px;
 		right: 48px;
 		left: unset;
 		width: 34px;
@@ -999,8 +1007,8 @@
 	}
 
 	.swiper-button-next {
-		background: url("../images/special-offers_next.svg") 0/34px no-repeat;
-		top: 68px;
+		background: url("../images/new-items_next.png") 0/34px no-repeat;
+		top: 82px;
 		right: 3px;
 		width: 34px;
 		height: 34px;
@@ -1059,7 +1067,7 @@
 
 	.swiper-container {
 		margin-bottom: 39px;
-		height: 208px;
+		height: 196px;
 
 		&.active {
 			height: auto;

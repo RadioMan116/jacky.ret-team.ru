@@ -51,12 +51,17 @@
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 26px;
-		padding-top: 24px;
+		padding-top: 19px;
+
+	}
+
+	.special-offers__pic {
+		max-height: 257px;
 
 	}
 
 	.special-offers__sale {
-		padding-top: 14px;
+		padding-top: 38px;
 	}
 
 
@@ -78,7 +83,7 @@
 
 		a,
 		i {
-			color: #394791;
+			color: $base;
 			font-style: initial;
 			padding: 0 5px;
 
@@ -88,7 +93,7 @@
 	&__link {
 		padding: 7px;
 		border-radius: 3px;
-		border: solid 1px #394791;
+		border: solid 1px #666666;
 		font-size: 14px;
 		font-weight: 500;
 		font-style: normal;
@@ -96,7 +101,7 @@
 		line-height: normal;
 		letter-spacing: normal;
 		text-align: left;
-		color: #394791;
+		color: #333333;
 		margin: 41px auto;
 		text-transform: uppercase;
 		text-decoration: none !important;
@@ -168,7 +173,7 @@
 		.new-items__how {
 
 			color: #2e2e2e;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			margin-right: -3px;
 			margin-top: 27px;

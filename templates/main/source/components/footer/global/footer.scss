@@ -1,8 +1,8 @@
 .footer {
 	// background-color: #f8f8f8;
 	background: url('../images/logo-bg.svg') no-repeat #f8f8f8;
-	background-size: 46% 30%;
-	background-position: 45% 41%;
+	background-size: auto;
+	background-position: center;
 	padding: 32px 0 19px;
 	z-index: 3;
 	position: relative;
@@ -21,22 +21,23 @@
 
 	&__col {
 		width: 25%;
-		flex-basis: 220px;
-		flex-grow: 1;
+		flex-basis: 324px;
+		// flex-grow: 1;
 
 		.menu-footer__item {
 			width: 85%;
 			cursor: pointer;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 16px;
-			color: #394791;
+			color: $base;
 			margin-bottom: 8px;
 		}
 
-		&:nth-child(3) {
+		&:nth-child(2) {
 			width: 39%;
-			flex-basis: 310px;
+			flex-basis: 326px;
+			// flex-grow: 1;
 
 
 			.menu-footer__list {
@@ -59,13 +60,22 @@
 			}
 		}
 
-		&:nth-child(4) {
+		// &:nth-child(4) {
+		// 	width: 15%;
+		// 	flex-basis: 180px;
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	flex-basis: 100px;
+		// 	padding-top: 12px;
+		// }
+		&:nth-child(3) {
 			width: 15%;
-			flex-basis: 192px;
 			display: flex;
 			flex-direction: column;
+			flex-basis: 192px;
 			padding-top: 12px;
 			flex-grow: 0;
+			margin-left: auto;
 		}
 	}
 
@@ -85,7 +95,7 @@
 		letter-spacing: normal;
 		text-align: left;
 		color: #666666;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 20px;
 
@@ -98,7 +108,7 @@
 		height: 34px;
 		padding: 4px 14px 4px 14px;
 		border-radius: 3px;
-		background-color: #394791;
+		background-color: #666666;
 		color: #ffffff;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
@@ -110,10 +120,11 @@
 
 	&__text {
 		color: #666666;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
 		text-align: right;
+
 		b {
 			font-weight: bold;
 		}
@@ -129,8 +140,8 @@
 	}
 
 	&__email {
-		color: #394791;
-		font-family: Arial,sans-serif;
+		color: $base;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
 		text-align: right;
@@ -155,7 +166,7 @@
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 36px;
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			// cursor: pointer;
 			margin-bottom: 10px;
@@ -163,13 +174,13 @@
 
 		&__link {
 			color: #666666;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 16px;
 			text-decoration: none !important;
 
 			&:hover {
-				color: #394791;
+				color: $base;
 			}
 		}
 
@@ -216,19 +227,19 @@
 
 	.privacy-policy {
 		color: #666666;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 20px;
 		text-decoration: none !important;
 
 		&:hover {
-			color: #394791;
+			color: $base;
 		}
 	}
 
 	.footer__call-phone-button {
-		color: #394791;
-		font-family: Arial,sans-serif;
+		color: $base;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
 		display: flex;
@@ -247,7 +258,7 @@
 		}
 
 		span {
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 		}
 	}
 
@@ -373,7 +384,7 @@
 
 		.checkbox__oferta {
 			color: #666666;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			line-height: 18px;
 		}
