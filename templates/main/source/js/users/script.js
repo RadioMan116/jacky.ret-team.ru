@@ -487,8 +487,8 @@ $(document).ready(function () {
 			spaceBetween: 25,
 			touchRatio: 1,
 			// loop: true,
-			resizeReInit: true,
-			initialSlide: 1,
+			// resizeReInit: true,
+			// initialSlide: 1,
 			freeMode: true,
 			navigation: {
 				nextEl: ".recently-watched__next",
