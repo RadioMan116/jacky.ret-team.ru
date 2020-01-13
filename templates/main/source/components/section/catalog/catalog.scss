@@ -371,7 +371,7 @@
 		color: #333333;
 		font-family: Arial, sans-serif;
 		font-size: 12px;
-		border-bottom: 1px dashed #394791;
+		border-bottom: 1px dashed #333333;
 		text-decoration: none;
 		line-height: normal;
 		flex-shrink: 0;
@@ -1599,11 +1599,23 @@
 			&__link {
 				background-color: unset;
 				color: $base;
-				border-bottom: 1px dashed $base;
+				display: flex;
+				text-align: left;
+				flex-wrap: wrap;
 				width: fit-content;
 				padding: 0;
 				margin-bottom: 28px;
 				box-shadow: unset !important;
+				justify-content: left;
+
+				p {
+					margin-bottom: 0;
+					border-bottom: 1px dashed $base;
+
+					+p {
+						padding-left: 6px;
+					}
+				}
 			}
 
 			.reviews-list {
@@ -1863,6 +1875,7 @@
 			@media screen and (max-width: 767px) {
 				max-width: 100%;
 				margin-left: 0;
+				width: 100%;
 
 				.swiper-pagination {
 					display: block;
@@ -2034,7 +2047,7 @@
 
 		.catalog__sorting {
 			flex-direction: column;
-			margin-bottom: 37px;
+			margin-bottom: 16px;
 		}
 
 		.sorting__info {
@@ -2045,14 +2058,13 @@
 		}
 
 		.catalog__ul {
-			margin-bottom: 19px;
+			margin-bottom: 0px;
 			width: 100%;
 			display: list-item;
 			justify-content: flex-start;
 			padding-left: 0;
 			flex-wrap: wrap;
 			align-items: baseline;
-
 		}
 
 
@@ -2195,6 +2207,11 @@
 
 				.catalog__pic {
 					height: 230px;
+
+					img {
+						max-height: 100%;
+						padding-bottom: 14px;
+					}
 				}
 
 				.announcing {
@@ -2226,6 +2243,11 @@
 					display: flex;
 					justify-content: center;
 				}
+
+				&.stock {
+					display: none;
+				}
+
 			}
 
 
@@ -2336,8 +2358,8 @@
 				flex-wrap: wrap;
 
 				.ratings__star {
-					width: 14px;
-					height: 15px;
+					width: 24px;
+					height: 24px;
 					background-position: 50%;
 					background-size: contain;
 					margin-right: 6px;
@@ -2365,6 +2387,17 @@
 				background-color: white;
 				border-radius: 3px;
 				border: unset;
+				flex-direction: column;
+				align-items: flex-start;
+
+				p {
+					margin-bottom: 10px;
+					border-bottom: 1px dashed $base;
+
+					+p {
+						padding-left: 0px;
+					}
+				}
 			}
 
 			.reviews-list__item {
@@ -2487,6 +2520,17 @@
 
 			&__items {
 				margin-bottom: 11px;
+
+				&.swiper-wrapper {
+
+					.all-video__item {
+						margin: unset;
+
+						&:nth-child(3n-1) {
+							margin: unset;
+						}
+					}
+				}
 			}
 
 			// .all-video__link
@@ -2891,6 +2935,14 @@
 				@media screen and (max-width: 320px) {
 					right: 16px !important;
 				}
+			}
+
+			.articles.swiper-container {
+				margin-bottom: 36px;
+			}
+
+			.catalog__description {
+				border-top: 1px solid #eeeeee;
 			}
 		}
 
