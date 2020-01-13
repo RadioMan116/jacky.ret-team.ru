@@ -1357,6 +1357,25 @@
 		}
 	}
 
+		input#del_filter {
+			display: flex;
+			align-items: center;
+			width: 176px;
+			height: 40px;
+			border-radius: 3px;
+			padding: 9px 43px 8px 16px;
+			// background: $base;
+			color: #ffffff;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+			text-transform: uppercase;
+			background: url("../images/close-filter.svg")no-repeat calc(100% - 15px) 50% $base;
+			margin-left: -8px;
+		}
+
+
 	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-direction: column;

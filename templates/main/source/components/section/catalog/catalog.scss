@@ -155,7 +155,7 @@
 		&:hover {
 			.catalog__sort {
 
-				 background: #bb0000;
+				background: $base;
 
 				span {
 					color: #ffffff;
@@ -185,7 +185,7 @@
 
 		&.active {
 			.catalog__sort {
-				 background: #bb0000;
+				background: $base;
 
 				span {
 					color: #ffffff;
@@ -215,7 +215,7 @@
 	&__sort {
 		padding: 4px 28px 4px 8px;
 		font-weight: normal;
-		 color: #333333;
+		color: #333333;
 		border-radius: 2px;
 		background-color: #f1f1f1;
 		text-transform: capitalize;
@@ -367,7 +367,7 @@
 	}
 
 	&__oneclick {
-		  color: #333333;
+		color: #333333;
 		font-family: Arial, sans-serif;
 		font-size: 12px;
 		border-bottom: 1px dashed #394791;
@@ -586,7 +586,7 @@
 	}
 
 	.load-more {
-		color: #394791;
+		color: #333333;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -596,7 +596,7 @@
 		white-space: nowrap;
 		min-width: 100px;
 		border-radius: 3px;
-		border: 1px solid #f1f1f1;
+		border: 1px solid #666666;
 		text-align: center;
 		text-decoration: none !important;
 		padding: 5px 46px;
@@ -1368,7 +1368,7 @@
 		&__link {
 			border-radius: 3px;
 			border: 1px solid #394791;
-			color: #394791;
+			color: #333333;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1464,7 +1464,7 @@
 				text-transform: uppercase;
 
 				span {
-					color: #394791;
+					color: #333333;
 					font-family: "Roboto Condensed";
 					font-size: 14px;
 					font-weight: 400;
@@ -1561,7 +1561,7 @@
 					text-transform: uppercase;
 
 					span {
-						color: #394791;
+						color: #333333;
 						font-family: "Roboto Condensed";
 						font-size: 13px;
 						font-weight: 400;
@@ -1585,7 +1585,7 @@
 			}
 
 			&__all {
-
+				color: $base;
 				border-bottom: 1px dashed;
 			}
 		}
@@ -1700,7 +1700,7 @@
 			}
 
 			&__reset {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -1864,11 +1864,13 @@
 				.swiper-pagination {
 					display: block;
 				}
+
 				.recently-watched__text,
-				.recently-watched__price{
+				.recently-watched__price {
 					font-size: 12px;
 				}
-				.recently-watched__reset{
+
+				.recently-watched__reset {
 					justify-content: flex-start;
 					border-bottom: 1px dashed $base;
 					width: fit-content;
@@ -2158,7 +2160,7 @@
 				padding: 0 !important;
 				line-height: 25px;
 				margin-bottom: 28px;
-				margin-top: 35px;
+				margin-top: 0px;
 			}
 
 			&__specification {
@@ -2215,7 +2217,7 @@
 					width: 112px;
 					height: 34px;
 					border-radius: 3px;
-					background-color: #394791;
+					background-color: $base;
 					color: #ffffff;
 					background-image: none;
 					display: flex;
@@ -2349,17 +2351,17 @@
 			}
 
 			.reviews__link {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
 				text-transform: uppercase;
-				padding: 9px 12px;
+				padding: 9px 12px 9px 0;
 				width: 100%;
-				text-align: center;
+				text-align: left;
 				background-color: white;
 				border-radius: 3px;
-				border: 1px solid #394791;
+				border: unset;
 			}
 
 			.reviews-list__item {
@@ -2467,9 +2469,10 @@
 				position: unset;
 				order: 5;
 				width: 100%;
-				height: 51px;
+				height: 41px;
 				border-radius: 3px;
-				border: 1px solid #394791;
+				border: 1px solid #666666;
+				color: #333333;
 			}
 
 			// .all-video__item
