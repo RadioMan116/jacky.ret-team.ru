@@ -65,14 +65,15 @@
 		flex-grow: 99;
 		flex-wrap: wrap;
 
+
 		margin-bottom: 5px;
 		margin-top: 0px;
 
 		.link-pop-glossary {}
 
 		.icons-prop-item {
-			width: 38.94px;
-			height: 39px;
+			width: 37px;
+			height: 37px;
 			padding: 0 4px 4px 0;
 		}
 	}
@@ -461,16 +462,16 @@
 			text-align: center;
 
 			span {
-				color: #394791;
+				// color: $base;
 				font-family: "Roboto Condensed";
-				font-weight: 700;
-				text-transform: uppercase;
+				// font-weight: 700;
+				// text-transform: uppercase;
 				display: block;
 			}
 		}
 
 		&__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 18px;
 			font-weight: 400;
@@ -1271,7 +1272,7 @@
 		// .all-video__link
 
 		&__more {
-			color: #394791;
+			color: #333333;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1283,7 +1284,7 @@
 			width: 97px;
 			height: 36px;
 			border-radius: 3px;
-			border: 1px solid #394791;
+			border: 1px solid #666666;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -1516,11 +1517,13 @@
 				&__pic {
 					height: 64px;
 					width: 58px;
+					max-height: 100%;
 					margin-right: 14px;
 					position: absolute;
 
 					picture {
 						// text-align: unset;
+						height: 100%;
 					}
 				}
 
@@ -1758,7 +1761,7 @@
 				flex-grow: 1;
 
 				&:hover {
-					color: #394791;
+					color: $base;
 				}
 			}
 
@@ -2896,7 +2899,7 @@
 			.catalog__items {
 				flex-direction: row;
 				flex-wrap: wrap;
-				margin: 0 -16px !important;
+				margin: 0 -16px 16px !important;
 				width: calc(100% + 32px) !important;
 
 				.catalog__item {

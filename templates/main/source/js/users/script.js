@@ -2530,10 +2530,10 @@ $(window).on('load', function () {
 				}
 			}
 		} else {
-			var tagsList = mainTags.querySelectorAll('.tags__item');
-			tagsList.forEach((element, index) => {
-				element.classList.add('show');
-			});
+			// var tagsList = mainTags.querySelectorAll('.tags__item');
+			// tagsList.forEach((element, index) => {
+			// 	element.classList.add('show');
+			// });
 		}
 
 
