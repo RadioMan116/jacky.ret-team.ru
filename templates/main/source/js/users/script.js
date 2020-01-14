@@ -170,6 +170,23 @@ $(document).ready(function () {
 		lazy: true,
 		effect: "fade"
 	});
+	var mySwiper666 = new Swiper(".js-new-advantages", {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 0,
+		lazy: true,
+		fadeEffect: {
+			crossFade: true
+		},
+		navigation: {
+			nextEl: ".new-advantages__next",
+			prevEl: ".new-advantages__prev"
+		},
+		pagination: {
+			el: ".new-advantages-pagination",
+			clickable: true
+		},
+	});
 	var mySwiper10 = new Swiper(".js-download-catalogs", {
 		// Optional parameters
 		// slidesPerGroup: 1,
