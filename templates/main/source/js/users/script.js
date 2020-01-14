@@ -723,12 +723,6 @@ $(document).ready(function () {
 			}
 		});
 
-		setInterval(function () {
-			$('.js-button__open').addClass('blink_on');
-			setTimeout(function () {
-				$('.js-button__open').removeClass('blink_on')
-			}, 1500);
-		}, 3000)
 
 	}
 	// $(window).resize(function () {
