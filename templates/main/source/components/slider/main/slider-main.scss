@@ -179,6 +179,11 @@
 	&__tablet {
 		display: flex;
 		align-items: flex-start;
+
+		.gallery__text {
+			padding: 0 24px 10px;
+			margin-bottom: unset;
+		}
 	}
 
 	&__el {
@@ -203,12 +208,13 @@
 		width: 100%;
 		z-index: 9;
 
-		img {
+		.gallery__link img {
 			width: 100%;
 			max-width: 100%;
 			height: auto;
 			max-height: 100%;
 		}
+
 
 		&:hover {
 			text-decoration: none !important;
@@ -372,32 +378,7 @@
 		right: 124px;
 	}
 
-	&__parent {
-		width: 100%;
-		height: 100%;
-		// position: absolute;
-		top: 0;
 
-		&.active {
-			position: absolute;
-
-			.gallery__description {
-				display: flex;
-				z-index: 1;
-
-				img {}
-			}
-
-
-
-			.gallery__point {
-				width: 48px;
-				height: 48px;
-				background: url("../images/point-big.svg") 0/48px no-repeat;
-			}
-
-		}
-	}
 }
 
 .new-gallery {
@@ -413,6 +394,37 @@
 		font-weight: 400;
 		line-height: 24px;
 		margin-bottom: 60px;
+	}
+
+	.gallery__parent {
+		width: 100%;
+		height: 100%;
+		// position: absolute;
+		top: 0;
+
+		&.active {
+			position: absolute;
+
+			.gallery__description {
+				display: flex;
+				z-index: 1;
+
+			}
+
+			img {
+				width: auto;
+				max-width: 100%;
+				height: auto;
+				max-height: 100%;
+			}
+
+			.gallery__point {
+				width: 48px;
+				height: 48px;
+				background: url("../images/point-big.svg") 0/48px no-repeat;
+			}
+
+		}
 	}
 }
 
@@ -549,20 +561,23 @@
 			padding: 6px 16px 4px;
 		}
 
-		&__text {
-			color: #666666;
-			font-family: Arial, sans-serif;
-			font-size: 14px;
-			line-height: 19px;
-			padding: 0px;
-		}
+
 
 
 		&__tablet {
 			display: flex;
 			flex-direction: column;
 			flex-grow: 1;
+
 			// padding-left: 10%;
+			.gallery__text {
+				color: #666666;
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				line-height: 19px;
+				padding: 0px;
+				padding: 0 12px 5px 16px;
+			}
 		}
 
 		&__el {
@@ -587,8 +602,9 @@
 			}
 
 			img {
-
+				width: 22%;
 				height: auto;
+				align-self: center;
 			}
 		}
 
@@ -609,6 +625,17 @@
 
 		.swiper-slide {
 			display: flex;
+		}
+
+		.gallery__text {
+			padding: 0;
+		}
+		.new-gallery__title {
+			color: #333333;
+			font-size: 26px;
+			font-weight: 400;
+			line-height: 24px;
+			margin-bottom: 30px;
 		}
 	}
 
