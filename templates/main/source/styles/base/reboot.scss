@@ -263,6 +263,12 @@ textarea {
 button,
 input {
 	overflow: visible;
+
+}
+input {
+		&:required {
+			box-shadow: none;
+		}
 }
 
 button,
