@@ -265,10 +265,11 @@ input {
 	overflow: visible;
 
 }
+
 input {
-		&:required {
-			box-shadow: none;
-		}
+	&:required {
+		box-shadow: none;
+	}
 }
 
 button,
