@@ -794,6 +794,18 @@ $(document).ready(function () {
 
 			}, true);
 		})
+		// let buttonNext = document.querySelector('.gallery__next');
+		// let buttonPrev = document.querySelector('.gallery__prev');
+		// buttonNext.addEventListener('click', foo1, false);
+
+		// function foo1() {
+		// 	firstAllParent.forEach(point => {
+
+		// 		let firstParent = point.querySelectorAll('.gallery__parent');
+		// 		firstParent[0].classList.add('active');
+		// 	})
+		// }
+
 	})()
 
 	$(".catalog__prop .js-link-pop-glossary").hover(function () {

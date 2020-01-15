@@ -146,7 +146,7 @@
 		border-radius: 2px;
 		// box-shadow: 0 2px 12px 0 rgba(82, 64, 64, 0.17);
 		background-color: #ffffff;
-		padding: 8px 11px;
+		padding: 8px 11px 8px 0;
 		font-size: 14px;
 		font-weight: normal;
 		font-style: normal;
@@ -158,7 +158,22 @@
 		flex-direction: column;
 		// display: flex;
 		align-items: baseline;
-		justify-content: center;
+		// justify-content: center;
+		padding-top: 56px;
+		z-index: -1;
+
+		img {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 24px;
+		color: #333333;
+		font-family: "Roboto Condensed";
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24px;
 	}
 
 	&__tablet {
@@ -216,16 +231,14 @@
 	}
 
 	&__text {
-		font-family: Arial, sans-serif;
-		font-size: 14px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.36;
-		letter-spacing: normal;
-		color: #666666;
-		padding: 0 24px 10px;
+		padding: 0;
 		text-decoration: none !important;
+		color: #262626;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-bottom: 24px;
 	}
 
 	.swiper-scrollbar {
@@ -367,6 +380,8 @@
 		&.active {
 			.gallery__description {
 				display: flex;
+
+				img {}
 			}
 
 
@@ -407,6 +422,7 @@
 		.swiper {
 			&-slide {
 				padding-left: 0;
+				display: flex;
 
 				picture {
 					overflow: hidden;
@@ -485,8 +501,39 @@
 		}
 
 		&__item {
-			display: none;
+			margin-bottom: 24px;
+
+			.services__bg,
+			.gallery__point {
+				display: none;
+
+			}
+
 		}
+
+		&__pagination {
+			bottom: 0;
+			left: 0%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			position: relative;
+			order: 4;
+		}
+
+		&__parent {
+			position: relative;
+			z-index: 0;
+			flex-shrink: 0;
+		}
+
+		&__description {
+			position: static;
+			width: 100%;
+			transform: unset;
+			padding: 0;
+		}
+
 
 		&__article {
 			color: #212121;
@@ -502,7 +549,7 @@
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 19px;
-			padding: 0px 12px 5px 16px;
+			padding: 0px;
 		}
 
 
@@ -549,6 +596,14 @@
 			.special-offers {
 				margin-top: 0px;
 			}
+		}
+	}
+
+	.new-gallery {
+		height: auto;
+
+		.swiper-slide {
+			display: flex;
 		}
 	}
 
