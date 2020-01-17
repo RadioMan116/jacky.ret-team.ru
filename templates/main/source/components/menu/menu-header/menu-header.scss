@@ -44,6 +44,9 @@
 		&:last-child {
 			padding-right: 0;
 		}
+		&:first-child{
+			margin-left: 0;
+		}
 	}
 
 	&__link {
@@ -64,7 +67,7 @@
 		font-family: Arial,sans-serif;
 		font-size: 13px;
 		line-height: 22px;
-		margin-right: 8px;
+		margin-right: 48px;
 		cursor: pointer;
 		position: relative;
 
