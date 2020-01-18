@@ -36,7 +36,7 @@
 
 			a,
 			span {
-				color:#bb0000;
+				color: #bb0000;
 				text-decoration: none;
 			}
 		}
@@ -44,14 +44,15 @@
 		&:last-child {
 			padding-right: 0;
 		}
-		&:first-child{
-			margin-left: 0;
+
+		&:first-child {
+			margin-left: 4px;
 		}
 	}
 
 	&__link {
 		display: block;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		font-weight: normal;
 		font-style: normal;
@@ -63,8 +64,8 @@
 
 	.city-change {
 		display: flex;
-		color:#bb0000;
-		font-family: Arial,sans-serif;
+		color: #bb0000;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
 		margin-right: 48px;
@@ -180,7 +181,8 @@
 			max-height: 125px;
 			padding-top: 1rem;
 			padding-bottom: 0;
-			&:nth-of-type(4){
+
+			&:nth-of-type(4) {
 				display: none;
 			}
 		}
@@ -203,7 +205,7 @@
 		&__item {
 			width: 50%;
 			margin-top: 17px;
-			cursor:pointer;
+			cursor: pointer;
 		}
 
 		.header__block_bottom & {
@@ -211,7 +213,8 @@
 			flex-direction: column;
 			width: 100%;
 		}
-		&+.menu{
+
+		&+.menu {
 			display: none;
 		}
 
@@ -231,7 +234,7 @@
 
 		.time-work {
 			color: #666;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 22px;
 			text-align: left;
@@ -239,7 +242,7 @@
 
 			i {
 				color: #666;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 13px;
 				line-height: 22px;
 				text-align: left;
