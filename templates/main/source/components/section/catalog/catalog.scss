@@ -204,13 +204,17 @@
 			}
 		}
 
-		&:first-child {
+		&:first-of-type {
 			margin-left: 29px;
 		}
 
 		&:last-child {
 			margin-right: 0;
 		}
+	}
+
+	&__positions {
+		margin-right: 24px;
 	}
 
 	&__sort {
