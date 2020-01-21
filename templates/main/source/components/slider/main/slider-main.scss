@@ -194,6 +194,7 @@
 		background-color: #ffffff;
 		height: 230px;
 		flex-grow: 1;
+		flex-basis: calc((100%/4) - 18px);
 
 		.gallery__parent {
 			display: flex;
