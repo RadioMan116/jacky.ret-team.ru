@@ -188,10 +188,11 @@
 	}
 
 	&__el {
-		margin-right: 2rem;
+		margin-right: 24px;
 		display: flex;
 		background-color: #ffffff;
 		height: 230px;
+		flex-grow: 1;
 
 		.gallery__parent {
 			display: flex;
