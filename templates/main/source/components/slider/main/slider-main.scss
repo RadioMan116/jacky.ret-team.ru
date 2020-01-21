@@ -25,6 +25,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding: 26px 33px;
+		width: 100%;
 	}
 
 	&__item {
@@ -189,12 +190,12 @@
 	}
 
 	&__el {
-		margin-right: 24px;
+		margin-right: auto;
 		display: flex;
 		background-color: #ffffff;
 		height: 230px;
-		flex-grow: 1;
-		flex-basis: calc((100%/4) - 18px);
+		// flex-grow: 1;
+		flex-basis: 272px;
 
 		.gallery__parent {
 			display: flex;
