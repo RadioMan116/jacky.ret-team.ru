@@ -404,6 +404,8 @@
 		// position: absolute;
 		top: 0;
 
+
+
 		&.active {
 			position: absolute;
 
@@ -426,6 +428,11 @@
 				background: url("../images/point-big.svg") 0/48px no-repeat;
 			}
 
+		}
+	}
+	.gallery__item {
+		.swiper-slide {
+			display: block;
 		}
 	}
 

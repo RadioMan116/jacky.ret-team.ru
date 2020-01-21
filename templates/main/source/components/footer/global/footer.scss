@@ -282,6 +282,9 @@
 		* {
 			transition: 0.3s;
 		}
+		.container{
+			width: calc(100% - 32px);
+		}
 
 		&__row {
 			flex-wrap: wrap;
