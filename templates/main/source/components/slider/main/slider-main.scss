@@ -260,8 +260,6 @@
 			padding-left: 0px;
 		}
 
-
-
 		&__item {
 			position: absolute;
 			align-items: flex-start;
@@ -276,8 +274,6 @@
 			padding-top: 44px;
 			// background: #0000006b
 		}
-
-
 
 		&__title {
 			width: 516px;
@@ -396,6 +392,7 @@
 		font-size: 26px;
 		font-weight: 400;
 		line-height: 24px;
+		max-width: 73%;
 		margin-bottom: 60px;
 	}
 
@@ -429,6 +426,7 @@
 
 		}
 	}
+
 }
 
 @media screen and (max-width: 900px) {}
@@ -645,6 +643,7 @@
 		.gallery__prev,
 		.gallery__next {
 			display: block;
+			top: 25px;
 		}
 
 		.gallery__parent {
