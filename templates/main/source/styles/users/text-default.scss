@@ -362,6 +362,7 @@
 		flex-wrap: wrap;
 		width: 100%;
 		margin-bottom: 29px;
+		display: block;
 
 		h2 {
 			// text-align: center;
@@ -382,12 +383,13 @@
 		// .official-dealers__link
 
 		&__link {
-			width: calc(50%-16px);
+			width: calc(50%-17px);
 			display: flex;
 			position: relative;
 			overflow: hidden;
 			margin-bottom: 19px;
 			margin-top: 14px;
+			display: inline-flex;
 
 			&:nth-of-type(1) {
 				margin-right: 29px;
