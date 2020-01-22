@@ -368,7 +368,7 @@
 		&::before {
 			width: 14px;
 			height: 14px;
-			content: url('../images/price updated.svg');
+			content: url('../images/price_updated.svg');
 			margin-right: 9px;
 			flex-shrink: 0;
 		}
@@ -2425,7 +2425,7 @@
 
 
 	.description {
-		width: 100%;
+		width: calc(75% - 6px);
 		padding-top: 18px;
 		margin-bottom: 12px;
 		color: #333333;
