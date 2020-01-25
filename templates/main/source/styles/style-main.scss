@@ -38,7 +38,8 @@ img {
 	display: none;
 
 	.response-popup {
-		padding: 1rem;
+		padding: 32px;
+		width: 320px;
 
 		&__title {
 
@@ -64,6 +65,13 @@ img {
 			text-align: center;
 			color: #262626;
 			margin-bottom: 1rem;
+		}
+
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
 		}
 	}
 }
