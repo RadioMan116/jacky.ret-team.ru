@@ -10,6 +10,7 @@ $(document).ready(function () {
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
 			if (-1 !== button.className.indexOf("opened")) {
+				button.parentNode.parentNode.classList.remove("active");
 				button.className = button.className.replace(" opened", "");
 				button.setAttribute("aria-expanded", "false");
 				menuBottom.classList.remove("active");
@@ -18,6 +19,7 @@ $(document).ready(function () {
 				$("html").removeClass("js-height");
 				$(".header__overlay").hide();
 			} else {
+				button.parentNode.parentNode.classList.add("active");
 				button.className += " opened";
 				button.setAttribute("aria-expanded", "true");
 				menuBottom.classList.add("active");
@@ -27,6 +29,16 @@ $(document).ready(function () {
 			}
 		};
 	}
+	(function () {
+		let bgAttr = document.querySelectorAll('.dropdown-menu__item');
+		if (bgAttr) {
+			bgAttr.forEach(element => {
+				let url = element.getAttribute('data-bg');
+				element.style.background = `url('${url}')`;
+			});
+		}
+
+	})();
 	var windowWidth2 = $(window).width();
 	var mySwiper2 = new Swiper(".js-swiper-two", {
 		slidesPerView: 4,
@@ -699,10 +711,10 @@ $(document).ready(function () {
 			// $('body').css('overflow','visible');
 			$('body').removeClass('fixed');
 		});
-		document.querySelectorAll('.dropdown-menu__item').forEach(element => {
-			let url = element.getAttribute('data-bg');
-			element.style.background = `url('${url}')`;
-		})
+		// document.querySelectorAll('.dropdown-menu__item').forEach(element => {
+		// 	let url = element.getAttribute('data-bg');
+		// 	element.style.background = `url('${url}')`;
+		// })
 	});
 	$(".js-menu-footer__title").click(function (event) {
 		if (

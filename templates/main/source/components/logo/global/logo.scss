@@ -20,12 +20,13 @@
 	@media screen and (max-width: 767px) {
 		position: unset;
 		order: -1;
-		max-width: 117px;
+		max-width: 90px;
 		width: auto;
 		height: 27px;
 		display: flex;
 		margin-right: 10px;
 		align-items: center;
+		margin-top: 0;
 
 		.logo__link {
 			min-width: unset;
