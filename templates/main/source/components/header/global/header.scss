@@ -423,11 +423,20 @@
 					overflow: auto;
 					padding-bottom: 12vh;
 					padding-top: 52px;
+					flex-direction: column;
 
 					.container {
-						height: 100%;
+						height: auto;
 						align-items: baseline;
 						align-content: baseline;
+						// flex-direction: column;
+						height: -moz-available;
+						/* WebKit игнор. */
+						height: -webkit-fill-available;
+						/* Mozilla игнор. */
+						height: fill-available;
+						flex-direction: column;
+						flex-wrap: nowrap;
 					}
 				}
 			}
