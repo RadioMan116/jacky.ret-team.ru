@@ -357,7 +357,7 @@
 				}
 
 				.dropdown-menu__item {
-					width: 82px;
+					width: 30%;
 					height: 95px;
 					display: flex;
 					flex-direction: column;
@@ -365,6 +365,7 @@
 					background-size: auto 47px !important;
 					margin: 9px 0 27px;
 					background-position: 50% 9px !important;
+					align-items: center;
 				}
 			}
 		}
@@ -390,6 +391,7 @@
 			line-height: 14px;
 			text-align: center;
 			white-space: normal !important;
+				width: 82px;
 		}
 	}
 
