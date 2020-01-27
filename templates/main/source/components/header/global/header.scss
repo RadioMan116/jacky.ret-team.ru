@@ -423,6 +423,12 @@
 					overflow: auto;
 					padding-bottom: 12vh;
 					padding-top: 52px;
+
+					.container {
+						height: 100%;
+						align-items: baseline;
+						align-content: baseline;
+					}
 				}
 			}
 
