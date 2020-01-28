@@ -491,16 +491,17 @@
 
 
 		&:first-child {
-		width: 84px;
-		min-width: unset;
-		position: absolute;
-		left: 5px;
-		padding-top: 0;
-		top: 5px;
-		height: 60px;
-		justify-content: flex-start;
+			width: 84px;
+			min-width: unset;
+			position: absolute;
+			left: 5px;
+			padding-top: 0;
+			top: 5px;
+			height: 60px;
+			justify-content: flex-start;
+
 			// padding-left: 0;
-			a{
+			a {
 				height: 100%;
 				width: 100%;
 			}

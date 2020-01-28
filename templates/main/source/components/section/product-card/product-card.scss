@@ -4247,9 +4247,34 @@
 			display: flex;
 			margin-bottom: 29px;
 
+
 			img:first-child {
 				margin-left: 0;
 			}
+				position: unset;
+				justify-content: center;
+				flex-direction: row;
+				flex-wrap: wrap;
+				margin: 0 -8px 12px;
+				display: flex;
+
+
+				img {
+					// max-height: 35px !important;
+
+
+					margin: 0 6px 0 0;
+
+				}
+
+				&__sale {
+					padding: 9px 6px 9px 6px;
+					width: 152px;
+					height: 40px;
+					margin-right: 6px;
+					flex-shrink: 0;
+					order: -1;
+				}
 		}
 
 		.gallery-top.swiper-container {
@@ -4908,8 +4933,6 @@
 				margin-bottom: 36px !important;
 			}
 		}
-
-
 
 		.description {
 			width: 100%;
