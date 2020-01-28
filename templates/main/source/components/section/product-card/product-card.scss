@@ -2624,7 +2624,7 @@
 			margin-left: auto;
 			padding: 5px 12px;
 			border-radius: 2px;
-			border: 1px solid #394791;
+			border: 1px solid $base;
 			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
@@ -2713,7 +2713,7 @@
 
 				&:first-child {
 					.diagram__pic {
-						border: 2px solid #394791;
+						border: 2px solid $base;
 					}
 
 					.diagram__name {
@@ -2748,7 +2748,7 @@
 					}
 
 					.diagram__pic {
-						border: 2px solid #394791;
+						border: 2px solid $base;
 					}
 
 				}
@@ -2866,7 +2866,7 @@
 		.schedule {
 			margin-top: auto;
 			width: 100%;
-			background-image: linear-gradient(to top, #9da7db 0%, #394791 100%);
+			background-image: linear-gradient(to top, #9da7db 0%, $base 100%);
 			// min-height: 20px;
 		}
 
@@ -3268,7 +3268,7 @@
 					// left: 0;
 
 					&:hover {
-						border: 1px solid #394791;
+						border: 1px solid $base;
 					}
 
 					&:first-child {
@@ -3276,7 +3276,7 @@
 					}
 
 					&.cur {
-						border: 1px solid #394791;
+						border: 1px solid $base;
 					}
 				}
 
@@ -3422,7 +3422,7 @@
 				}
 
 				.tags__link {
-					border: 1px solid #394791;
+					border: 1px solid $base;
 				}
 			}
 
@@ -3600,7 +3600,7 @@
 
 				.abuse-popup__item {
 					margin-bottom: 0;
-					height: 35px;
+					height: 46px;
 				}
 			}
 
@@ -3949,12 +3949,12 @@
 		.product-card__price {
 			color: #333333;
 			font-family: "Roboto Condensed";
-			font-size: 36px;
+			// font-size: 36px;
 			font-weight: 400;
-			line-height: 44px;
+			// line-height: 44px;
 			text-transform: uppercase;
-			width: 100%;
-			justify-content: center;
+			// width: 100%;
+			// justify-content: center;
 			margin-right: 0;
 			margin-bottom: 14px;
 			display: flex;
@@ -3981,6 +3981,17 @@
 				font-size: 18px;
 
 			}
+
+			width: 134px;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 23px;
+			justify-content: flex-start;
+
+			b {
+				font-size: inherit;
+				margin-left: 5px;
+			}
 		}
 
 		&__button {
@@ -3998,7 +4009,7 @@
 
 		.product-card__icons {
 			text-align: center;
-			padding: 0 0 0;
+			// padding: 0 0 0;
 
 			&+.product-card__icons {
 				padding: 6px 0 0px;
@@ -4023,7 +4034,8 @@
 				}
 
 				&:nth-child(2) {
-					margin-left: unset;
+					margin-left: unset !important;
+					margin-right: unset !important;
 				}
 			}
 		}
@@ -4112,7 +4124,8 @@
 
 		.product-card__description {
 			margin-bottom: 7px;
-			height: 227px;
+			height: 170px;
+			border-bottom: 1px solid #fff;
 
 			h2 {
 				margin-top: 0;
@@ -4231,8 +4244,20 @@
 			}
 
 			&_bottom {
-				flex-direction: column;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: center;
+				margin-bottom: 14px;
 			}
+		}
+
+		.product-card__cheaper {
+			width: 134px;
+			text-align: center;
+			margin-left: 18px;
+			margin-right: unset;
+			margin-bottom: 10px;
 		}
 
 		.product-card__social {
@@ -4303,18 +4328,29 @@
 					max-height: 500px;
 					align-items: center;
 					flex-direction: column;
-					justify-content: center;
+					justify-content: flex-start;
+					min-height: 235px;
+
+					img {
+						min-height: 235px;
+						height: auto !important;
+					}
 
 
 					&::before,
 					&::after {
 						display: none;
 					}
-
-					picture {}
 				}
 
-
+				a[data-fancybox=iframe] {
+					width: auto;
+					max-height: 100%;
+					align-items: center;
+					flex-direction: column;
+					justify-content: center;
+					margin: 0 auto;
+				}
 			}
 
 
@@ -4493,7 +4529,7 @@
 					&.active {
 						box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.1);
 						background-color: #ffffff;
-						color: #394791 !important;
+						color: $base !important;
 						background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 94%/14px no-repeat !important;
 						margin: 0 0 10px 0;
 					}
@@ -5343,6 +5379,150 @@
 				}
 			}
 		}
+
+		.product-card__type-payment {
+			flex-wrap: wrap;
+			margin-bottom: 0px;
+			justify-content: space-between;
+
+			@media screen and (max-width: 480px) {
+				justify-content: flex-end;
+			}
+
+			.type-payment__item {
+				width: 134px;
+				white-space: normal;
+				align-items: center;
+				margin-bottom: 16px;
+				font-size: 12px;
+				line-height: 14px;
+				margin-right: 0;
+
+				@media screen and (max-width: 480px) {
+					flex-basis: 45%;
+					max-width: 50%;
+				}
+
+
+				&:nth-child(odd) {
+					padding-right: 18px;
+				}
+
+				// &:last-child,
+				// &:nth-last-child(2) {
+				// 	margin-bottom: 0;
+				// }
+			}
+		}
+
+		.product-card__delivery {
+			// background: none;
+			// padding: 9px 0;
+			padding: 9px 0 9px 52px;
+
+			.delivery__info {
+				font-size: 12px;
+				line-height: 18px;
+
+				&:first-of-type {
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+		.product-card__announcing {
+			margin-bottom: 5px;
+			justify-content: space-between;
+
+			@media screen and (max-width: 480px) {
+				justify-content: flex-end;
+			}
+
+			.announcing__item {
+
+				@media screen and (max-width: 480px) {
+					flex-basis: 45% !important;
+					max-width: 50%;
+				}
+
+				&:nth-child(odd) {
+					padding-right: 18px;
+					margin-right: 0;
+				}
+			}
+		}
+
+			.newsletter {
+				flex-direction: column;
+				display: flex;
+				order: 6;
+				margin: 0 -16px;
+				width: auto;
+				padding: 16px;
+
+
+				&__items {
+					width: auto;
+					margin: -30% -2px 0;
+					background: white;
+				}
+
+				.newsletter__title {
+					color: #333333;
+					font-family: "Roboto Condensed";
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 26px;
+					padding: 16px 0 11px;
+					background: white;
+					width: 100%;
+					// margin-top: -26px;
+				}
+
+				.newsletter__subtitle {
+					color: #666666;
+					font-family: Arial;
+					font-size: 14px;
+					line-height: 18px;
+					margin-bottom: 15px;
+				}
+
+				.newsletter__pic {
+					margin-right: 0;
+					width: 100%;
+					overflow: hidden;
+
+					img {
+						margin-top: -14%;
+					}
+				}
+
+				input[type=text],
+				input[type=email],
+				input[type=submit] {
+					margin-right: 0 !important;
+					width: 100%;
+					max-width: unset;
+				}
+
+				input[type=text] {
+					margin-bottom: 10px;
+				}
+
+				input[type=submit] {
+					order: 4;
+				}
+
+				.checkbox_oferta {
+					width: 100%;
+					margin: 12px 0 15px;
+				}
+
+				.checkbox__text a {
+					margin-left: 5px;
+					margin-right: 5px;
+				}
+			}
 	}
 }
 

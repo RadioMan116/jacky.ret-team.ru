@@ -137,7 +137,7 @@
 			}
 
 			&__item {
-				height: unset;
+				height: unset !important;
 				flex-wrap: wrap;
 
 				label {
