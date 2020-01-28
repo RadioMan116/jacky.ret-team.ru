@@ -741,7 +741,7 @@
 			background: #000 !important;
 
 			&-active {
-				background: $base!important;
+				background: $base !important;
 				box-sizing: border-box;
 			}
 		}
@@ -4326,8 +4326,8 @@
 		}
 
 		.swiper-pagination-bullet-active {
-			color: $base!important;
-			background-color: $base!important;
+			color: $base !important;
+			background-color: $base !important;
 		}
 
 		&__description.closed {
@@ -5378,6 +5378,10 @@
 			justify-content: center;
 			align-items: center;
 			margin-bottom: 18px;
+
+			picture {
+				height: 100%;
+			}
 
 			img {
 				max-width: 100%;
