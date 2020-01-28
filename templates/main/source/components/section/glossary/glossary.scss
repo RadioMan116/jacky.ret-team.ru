@@ -46,7 +46,7 @@
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 24px;
-		background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") #394791 22px 24px/18px no-repeat;
+		background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") $base 22px 24px/18px no-repeat;
 		padding: 22px 56px;
 	}
 
@@ -186,7 +186,7 @@
 		&__title {
 			padding: 12px 46px;
 			font-size: 18px !important;
-			background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") #394791 18px 15px/18px no-repeat;
+			background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") $base 18px 15px/18px no-repeat;
 		}
 
 		&.closed {
