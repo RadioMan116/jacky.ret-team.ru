@@ -4251,30 +4251,31 @@
 			img:first-child {
 				margin-left: 0;
 			}
-				position: unset;
-				justify-content: center;
-				flex-direction: row;
-				flex-wrap: wrap;
-				margin: 0 -8px 12px;
-				display: flex;
+
+			position: unset;
+			justify-content: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 -8px 12px;
+			display: flex;
 
 
-				img {
-					// max-height: 35px !important;
+			img {
+				// max-height: 35px !important;
 
+				padding-left: 0;
+				margin: 0 6px 0 0;
 
-					margin: 0 6px 0 0;
+			}
 
-				}
-
-				&__sale {
-					padding: 9px 6px 9px 6px;
-					width: 152px;
-					height: 40px;
-					margin-right: 6px;
-					flex-shrink: 0;
-					order: -1;
-				}
+			&__sale {
+				padding: 9px 6px 9px 6px;
+				width: auto;
+				height: 40px;
+				margin-right: 6px;
+				flex-shrink: 0;
+				order: -1;
+			}
 		}
 
 		.gallery-top.swiper-container {
