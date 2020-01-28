@@ -11,7 +11,7 @@
 		right: 15px;
 		top: 15px;
 		font-size: 24px;
-		color: #394791;
+		color: $base;
 		padding-right: 5px;
 	}
 
@@ -491,11 +491,14 @@
 
 
 		&:first-child {
-			width: 50px;
-			min-width: unset;
-			position: absolute;
-			left: 30px;
-			padding-top: 0;
+		width: 84px;
+		min-width: unset;
+		position: absolute;
+		left: 5px;
+		padding-top: 0;
+		top: 5px;
+		height: 80px;
+		justify-content: flex-start;
 			// padding-left: 0;
 		}
 
@@ -524,6 +527,10 @@
 				line-height: 24px;
 				text-transform: uppercase;
 				margin-bottom: 20px;
+
+				b {
+					font-size: inherit;
+				}
 			}
 
 			.added-cart__button {
@@ -532,6 +539,8 @@
 				a {
 					width: 100%;
 					text-align: center;
+					margin-left: 0;
+					height: 36px;
 
 					&:first-child {
 						margin: 0 0 6px;

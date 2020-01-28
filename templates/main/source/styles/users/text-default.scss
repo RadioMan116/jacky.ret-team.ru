@@ -426,8 +426,6 @@
 		display: none;
 	}
 
-
-
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
 
@@ -681,7 +679,7 @@
 				width: 119px;
 				position: absolute;
 				height: 1px;
-				border-bottom: 1px dashed #394791;
+				border-bottom: 1px dashed $base;
 				bottom: 9px;
 			}
 
