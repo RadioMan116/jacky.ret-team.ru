@@ -2980,7 +2980,7 @@
 					width: 50%;
 					flex-direction: column;
 					margin-bottom: 0;
-					padding: 8px 25px 25px 11px;
+					padding: 8px 11px 16px 11px;
 					min-width: unset;
 
 					&:nth-child(3n-1) {
@@ -3015,13 +3015,15 @@
 					.catalog__price {
 						width: 100%;
 						height: auto;
+						padding: 5px 0 10px;
 					}
 
-					.catalog__sale {
+					.catalog__sale,
+					.special-offers__sale {
 						height: auto;
 						justify-content: unset;
 						margin-bottom: 0;
-						    align-items: center;
+						align-items: center;
 					}
 
 					.catalog__favorite,
