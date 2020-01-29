@@ -1407,6 +1407,9 @@
 			line-height: 20px;
 			text-transform: uppercase;
 
+			a {
+				text-decoration: none;
+			}
 		}
 
 		.swiper-wrapper {}
@@ -1974,6 +1977,7 @@
 			width: calc(100% - 222px);
 			display: flex;
 			flex-wrap: wrap;
+			padding-left: 16px;
 
 			&-list {
 				display: flex;
@@ -2997,6 +3001,8 @@
 						width: 100%;
 						flex-direction: column;
 						flex-grow: 1;
+							padding-left: 0px;
+
 
 						&-list {
 							width: 100%;
