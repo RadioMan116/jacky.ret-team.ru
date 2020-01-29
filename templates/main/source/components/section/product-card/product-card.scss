@@ -4330,8 +4330,13 @@
 					flex-direction: column;
 					justify-content: flex-start;
 					min-height: 235px;
-					picture{
+
+					picture {
 						min-height: 235px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
 					}
 
 					img {
@@ -5455,77 +5460,77 @@
 			}
 		}
 
-			.newsletter {
-				flex-direction: column;
-				display: flex;
-				order: 6;
-				margin: 0 -16px;
+		.newsletter {
+			flex-direction: column;
+			display: flex;
+			order: 6;
+			margin: 0 -16px;
+			width: auto;
+			padding: 16px;
+
+
+			&__items {
 				width: auto;
-				padding: 16px;
+				margin: -30% -2px 0;
+				background: white;
+			}
 
+			.newsletter__title {
+				color: #333333;
+				font-family: "Roboto Condensed";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
+				padding: 16px 0 11px;
+				background: white;
+				width: 100%;
+				// margin-top: -26px;
+			}
 
-				&__items {
-					width: auto;
-					margin: -30% -2px 0;
-					background: white;
-				}
+			.newsletter__subtitle {
+				color: #666666;
+				font-family: Arial;
+				font-size: 14px;
+				line-height: 18px;
+				margin-bottom: 15px;
+			}
 
-				.newsletter__title {
-					color: #333333;
-					font-family: "Roboto Condensed";
-					font-size: 18px;
-					font-weight: 400;
-					line-height: 26px;
-					padding: 16px 0 11px;
-					background: white;
-					width: 100%;
-					// margin-top: -26px;
-				}
+			.newsletter__pic {
+				margin-right: 0;
+				width: 100%;
+				overflow: hidden;
 
-				.newsletter__subtitle {
-					color: #666666;
-					font-family: Arial;
-					font-size: 14px;
-					line-height: 18px;
-					margin-bottom: 15px;
-				}
-
-				.newsletter__pic {
-					margin-right: 0;
-					width: 100%;
-					overflow: hidden;
-
-					img {
-						margin-top: -14%;
-					}
-				}
-
-				input[type=text],
-				input[type=email],
-				input[type=submit] {
-					margin-right: 0 !important;
-					width: 100%;
-					max-width: unset;
-				}
-
-				input[type=text] {
-					margin-bottom: 10px;
-				}
-
-				input[type=submit] {
-					order: 4;
-				}
-
-				.checkbox_oferta {
-					width: 100%;
-					margin: 12px 0 15px;
-				}
-
-				.checkbox__text a {
-					margin-left: 5px;
-					margin-right: 5px;
+				img {
+					margin-top: -14%;
 				}
 			}
+
+			input[type=text],
+			input[type=email],
+			input[type=submit] {
+				margin-right: 0 !important;
+				width: 100%;
+				max-width: unset;
+			}
+
+			input[type=text] {
+				margin-bottom: 10px;
+			}
+
+			input[type=submit] {
+				order: 4;
+			}
+
+			.checkbox_oferta {
+				width: 100%;
+				margin: 12px 0 15px;
+			}
+
+			.checkbox__text a {
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+		}
 	}
 }
 
