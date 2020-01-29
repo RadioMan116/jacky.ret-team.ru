@@ -1,10 +1,11 @@
 .content-top {
 	background: url("../images/catalog.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: auto;
 	max-width: 1436px;
 	margin: 0 auto;
 	min-height: 362px;
 	display: flex;
+	background-position-x: right;
 
 	&__inner {
 		width: 100%;

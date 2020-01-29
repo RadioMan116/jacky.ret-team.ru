@@ -20,14 +20,14 @@ html {
 	-ms-text-size-adjust: 100%;
 	-ms-overflow-style: scrollbar;
 	-webkit-tap-highlight-color: transparent;
-	height: auto;
-	min-height: -webkit-fill-available;
-	width: calc(100vw - 17px);
-	display: flex;
+	// height: auto;
+	// min-height: -webkit-fill-available;
+	// width: calc(100vw - 17px);
+	// display: flex;
 
-	@media screen and (max-width: 767px) {
-		width: 100vw;
-	}
+	// @media screen and (max-width: 767px) {
+	// 	width: 100vw;
+	// }
 }
 
 @-ms-viewport {

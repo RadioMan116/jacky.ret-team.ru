@@ -1501,7 +1501,7 @@
 			&__item {
 				min-width: unset;
 				flex-basis: auto;
-				width: 210px;
+				width: calc(25% - 12px);
 				padding: 18px 11px 9px;
 				flex-grow: 0;
 
@@ -3001,7 +3001,7 @@
 						width: 100%;
 						flex-direction: column;
 						flex-grow: 1;
-							padding-left: 0px;
+						padding-left: 0px;
 
 
 						&-list {

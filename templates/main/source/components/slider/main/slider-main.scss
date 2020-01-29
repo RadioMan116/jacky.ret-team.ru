@@ -10,7 +10,7 @@
 	img {
 		width: auto;
 		height: 100%;
-		max-width: 100%;
+
 	}
 
 	.swiper-container-main {
@@ -260,6 +260,17 @@
 	.swiper {
 		&-slide {
 			padding-left: 0px;
+			// display: flex;
+			// align-items: baseline;
+			// justify-content: flex-end;
+			overflow: hidden;
+			img{
+					max-width: unset;
+
+					@media only screen and (max-width: 1024px) {
+						transform: translateX(-10%);
+					}
+			}
 		}
 
 		&__item {
@@ -315,6 +326,10 @@
 					line-height: 24px;
 					margin-bottom: 13px;
 				}
+			}
+
+			@media only screen and (max-width: 1024px) {
+				margin-left: 18px;
 			}
 		}
 
@@ -488,6 +503,7 @@
 			display: flex;
 			padding-top: 225px;
 			justify-content: center;
+
 			.gallery__parent {
 				min-width: 212px;
 			}
