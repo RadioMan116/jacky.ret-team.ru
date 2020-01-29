@@ -2131,83 +2131,83 @@ $(document).ready(function () {
 	}
 });
 $(window).on('load', function () {
-	// var windowWidth2 = $(window).width();
-	// setTimeout(function () {
-	// 	var mySwiper = new Swiper(".js-swiper-main", {
-	// 		// Optional parameters
-	// 		direction: "horizontal",
-	// 		loop: true,
-	// 		autoplay: {
-	// 			delay: 4000,
-	// 			disableOnInteraction: false,
-	// 		},
+	var windowWidth2 = $(window).width();
+	setTimeout(function () {
+		var mySwiper = new Swiper(".js-swiper-main", {
+			// Optional parameters
+			direction: "horizontal",
+			loop: true,
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
 
-	// 		// If we need pagination
-	// 		pagination: {
-	// 			el: ".swiper-pagination",
-	// 			clickable: true
-	// 		},
+			// If we need pagination
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true
+			},
 
-	// 		// Navigation arrows
-	// 		navigation: {
-	// 			nextEl: ".main_next",
-	// 			prevEl: ".main_prev"
-	// 		},
+			// Navigation arrows
+			navigation: {
+				nextEl: ".main_next",
+				prevEl: ".main_prev"
+			},
 
-	// 		// And if we need scrollbar
-	// 		scrollbar: {
-	// 			el: ".swiper-scrollbar",
-	// 			draggable: true
-	// 		}
-	// 	});
-	// 	var galleryThumbs = new Swiper('.js-gallery-thumbs', {
-	// 		spaceBetween: 9,
-	// 		slidesPerView: 6,
-	// 		freeMode: true,
-	// 		// direction: "vertical",
-	// 		watchSlidesVisibility: true,
-	// 		watchSlidesProgress: true,
-	// 		touchRatio: 0.2,
-	// 		slideToClickedSlide: true,
-	// 		breakpoints: {
-	// 			// when window width is <= 320px
-	// 			// 420: {
-	// 			//   slidesPerGroup: 1,
-	// 			//   slidesPerView: 1,
-	// 			//   spaceBetween: 0
-	// 			// },
-	// 			// // // when window width is <= 480px
-	// 			// // 480: {
-	// 			// 700: {
-	// 			//   slidesPerView: 2,
-	// 			//   slidesPerGroup: 2,
-	// 			//   spaceBetween: 20
-	// 			// },
-	// 			768: {
+			// And if we need scrollbar
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				draggable: true
+			}
+		});
+		var galleryThumbs = new Swiper('.js-gallery-thumbs', {
+			spaceBetween: 9,
+			slidesPerView: 6,
+			freeMode: true,
+			// direction: "vertical",
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			touchRatio: 0.2,
+			slideToClickedSlide: true,
+			breakpoints: {
+				// when window width is <= 320px
+				// 420: {
+				//   slidesPerGroup: 1,
+				//   slidesPerView: 1,
+				//   spaceBetween: 0
+				// },
+				// // // when window width is <= 480px
+				// // 480: {
+				// 700: {
+				//   slidesPerView: 2,
+				//   slidesPerGroup: 2,
+				//   spaceBetween: 20
+				// },
+				768: {
 
-	// 				spaceBetween: 14
-	// 			}
-	// 		},
-	// 		navigation: {
-	// 			nextEl: ".thumbs-next",
-	// 			prevEl: ".thumbs-prev"
-	// 		},
-	// 	});
-	// 	var galleryTop = new Swiper('.js-gallery-top', {
-	// 		spaceBetween: 0,
-	// 		// navigation: {
-	// 		// 	nextEl: '.swiper-button-next',
-	// 		// 	prevEl: '.swiper-button-prev',
-	// 		// },
-	// 		pagination: {
-	// 			el: ".gallery-top__pagination",
-	// 			clickable: true
-	// 		},
-	// 		thumbs: {
-	// 			swiper: galleryThumbs
-	// 		}
-	// 	});
-	// }, 100);
+					spaceBetween: 14
+				}
+			},
+			navigation: {
+				nextEl: ".thumbs-next",
+				prevEl: ".thumbs-prev"
+			},
+		});
+		var galleryTop = new Swiper('.js-gallery-top', {
+			spaceBetween: 0,
+			// navigation: {
+			// 	nextEl: '.swiper-button-next',
+			// 	prevEl: '.swiper-button-prev',
+			// },
+			pagination: {
+				el: ".gallery-top__pagination",
+				clickable: true
+			},
+			thumbs: {
+				swiper: galleryThumbs
+			}
+		});
+	}, 100);
 
 	if ($(".filter-new").length) {
 		$('.filter-new .bx-filter-parameters-box-container').each(function () {

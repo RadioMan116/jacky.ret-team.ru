@@ -193,9 +193,9 @@
 		margin-right: auto;
 		display: flex;
 		background-color: #ffffff;
-		height: 230px;
+		// height: 230px;
 		// flex-grow: 1;
-		flex-basis: 272px;
+		flex-basis:calc(25% - 12px);
 
 		.gallery__parent {
 			display: flex;
@@ -264,12 +264,13 @@
 			// align-items: baseline;
 			// justify-content: flex-end;
 			overflow: hidden;
-			img{
-					max-width: unset;
 
-					@media only screen and (max-width: 1024px) {
-						transform: translateX(-10%);
-					}
+			img {
+				max-width: unset;
+
+				@media only screen and (max-width: 1024px) {
+					transform: translateX(-10%);
+				}
 			}
 		}
 
