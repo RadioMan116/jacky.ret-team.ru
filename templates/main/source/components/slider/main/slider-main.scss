@@ -655,8 +655,8 @@
 		}
 
 		.swiper-slide {
-			display: flex;
-			overflow: visible !important;
+			display: flex !important;
+			// overflow: visible !important;
 			.services__bg{
 				display: none;
 			}
@@ -681,11 +681,13 @@
 		}
 
 		.gallery__parent {
-			display: none;
+			display: flex;
+			flex-shrink: 0;
 
 			&.active {
 				display: flex;
 				position: static !important;
+				order: -1;
 			}
 
 			.gallery__description {
@@ -694,6 +696,7 @@
 				max-width: 100%;
 				position: static !important;
 				transform: translateY(0%);
+				display: flex;
 			}
 
 			.gallery__point {
