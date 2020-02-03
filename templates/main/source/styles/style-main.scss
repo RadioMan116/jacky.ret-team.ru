@@ -20,6 +20,7 @@ img {
 .fixed {
 	overflow: hidden;
 	// width:calc(100% - 17px);
+
 }
 
 .swiper-container,
@@ -243,6 +244,12 @@ picture {
 
 	.fixed {
 		width: 100%;
+
+		.header {
+			+.section {
+				opacity: 0;
+			}
+		}
 	}
 
 }
