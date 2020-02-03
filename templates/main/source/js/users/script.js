@@ -1229,7 +1229,16 @@ $(document).ready(function () {
 			}
 		})();
 
-
+		(function () {
+			let productCard = document.querySelector('.product-card');
+			if (productCard) {
+				let favorite = productCard.querySelector('.product-card__social');
+				let productHeaderBottom = productCard.querySelector('.product__header_bottom');
+				console.log(favorite);
+				console.log(productHeaderBottom);
+				productHeaderBottom.append(favorite);
+			}
+		})();
 
 
 	}
@@ -2129,6 +2138,8 @@ $(document).ready(function () {
 	if ($('.page__title.content-top__title.content-top__title_top span').length > 0) {
 		$(".content-top").addClass("content-top__tags");
 	}
+
+
 });
 $(window).on('load', function () {
 	var windowWidth2 = $(window).width();
