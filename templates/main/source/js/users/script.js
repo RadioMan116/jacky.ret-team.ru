@@ -450,7 +450,7 @@ $(document).ready(function () {
 			slidesPerGroup: 1,
 			spaceBetween: 25,
 			touchRatio: 1,
-			allowTouchMove: false,
+			// allowTouchMove: false,
 			navigation: {
 				nextEl: ".recently-watched__next",
 				prevEl: ".recently-watched__prev"
@@ -459,21 +459,25 @@ $(document).ready(function () {
 				el: ".swiper-pagination-recently-watched",
 				clickable: true
 			},
-			breakpoints: {
-				480: {
-					slidesPerView: 1.3,
-					slidesPerGroup: 1,
-					spaceBetween: 16,
+breakpoints: {
+	480: {
+		slidesPerView: 2.5,
+		slidesPerGroup: 1,
+		spaceBetween: 8,
 
-				},
+	},
 
-				767: {
-					allowTouchMove: true,
-					slidesPerView: 2,
-					slidesPerGroup: 1,
-					spaceBetween: 24
-				},
-			}
+	640: {
+		slidesPerView: 3,
+		slidesPerGroup: 1,
+		spaceBetween: 12
+	},
+	767: {
+		slidesPerView: 4,
+		slidesPerGroup: 1,
+		spaceBetween: 16
+	},
+},
 
 		});
 		if ($(".js-recently-watched .swiper-slide").length > 4) {

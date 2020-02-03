@@ -977,6 +977,7 @@
 	}
 
 	@media screen and (max-width: 767px) {
+		background: #fff;
 
 		.fixed-header {
 			max-width: 100%;
@@ -1328,6 +1329,7 @@
 		}
 
 		.swiper-block {
+			// padding-top: 28px;
 			padding-top: 28px;
 			font-size: 12px !important;
 			font-weight: normal;
