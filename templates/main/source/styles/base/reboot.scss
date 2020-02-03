@@ -12,7 +12,6 @@
 	box-sizing: border-box;
 	outline: none;
 }
-
 html {
 	font-family: sans-serif;
 	line-height: 1.15;
@@ -20,14 +19,16 @@ html {
 	-ms-text-size-adjust: 100%;
 	-ms-overflow-style: scrollbar;
 	-webkit-tap-highlight-color: transparent;
-	// height: auto;
-	// min-height: -webkit-fill-available;
-	// width: calc(100vw - 17px);
-	// display: flex;
+	height: 100%;
+	min-height: -moz-available;
+	min-height: -webkit-fill-available;
+	min-height: fill-available;
+	width: 100%;
+	display: flex;
 
-	// @media screen and (max-width: 767px) {
-	// 	width: 100vw;
-	// }
+	@media screen and (max-width: 767px) {
+		width: 100vw;
+	}
 }
 
 @-ms-viewport {

@@ -5572,6 +5572,23 @@
 				margin-right: 5px;
 			}
 		}
+
+			.catalog__prop {
+				h6 {
+					margin-bottom: 16px;
+				}
+
+				.link-pop-glossary {
+					margin-left: 0px;
+					margin-right: 16px;
+					position: static;
+					.popup-prop{
+						left: 0 !important;
+					}
+				}
+			}
+
+
 	}
 }
 
