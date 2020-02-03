@@ -404,44 +404,27 @@
 			}
 
 
-			&__block_bottom {
-				display: none;
+				&__block_bottom {
+					display: none;
 
-				&.active {
-					display: block;
-					transform: scale(1);
-					position: fixed;
-					top: 57px;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					transition: transform 0.3s;
-					display: flex;
-					align-items: baseline;
-					box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
-					background-color: #ffffff;
-					overflow: auto;
-					padding-bottom: 12vh;
-					padding-top: 52px;
-					flex-direction: column;
-
-					max-width: 100vw;
-
-					.container {
-						height: auto;
+					&.active {
+						display: block;
+						transform: scale(1);
+						position: fixed;
+						top: 57px;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						transition: transform 0.3s;
+						display: flex;
 						align-items: baseline;
-						align-content: baseline;
-						// // flex-direction: column;
-						// height: -moz-available;
-						// /* WebKit игнор. */
-						// height: -webkit-fill-available;
-						// /* Mozilla игнор. */
-						// height: fill-available;
-						flex-direction: column;
-						flex-wrap: nowrap;
+						box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+						background-color: #ffffff;
+						overflow: auto;
+						padding-bottom: 12vh;
+						padding-top: 52px;
 					}
 				}
-			}
 
 			&__block_top {
 				height: 60px;
