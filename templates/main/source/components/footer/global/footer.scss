@@ -355,13 +355,14 @@
 					// flex-direction: row;
 					position: relative;
 					flex-wrap: wrap;
-					max-height: 190px;
+					max-height: 195px;
 					padding-top: 40px;
 
 					.footer__text,
 					.footer__tel,
 					a {
-						width: 50%;
+						width: 45%;
+						white-space: nowrap;
 					}
 
 					.footer__text_first {
