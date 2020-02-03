@@ -4256,8 +4256,9 @@
 					width: 100%;
 					justify-content: space-around;
 					margin-top: 16px;
-					.item{
-						background-size: 25px;
+
+					.item {
+						background-size: 25px !important;
 						justify-content: center;
 						height: 24px;
 					}
@@ -4270,10 +4271,12 @@
 
 					.item.compare {
 						margin-left: 14px;
-							width: 119px;
+						width: 119px;
 					}
-					p{
+
+					p {
 						color: #333333;
+						line-height: 1;
 					}
 				}
 			}
