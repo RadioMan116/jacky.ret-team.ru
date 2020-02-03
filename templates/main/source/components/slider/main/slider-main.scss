@@ -678,6 +678,12 @@
 			&.active {
 				display: flex;
 			}
+			.gallery__description{
+				left: 0;
+			}
+			.gallery__point{
+				display: none;
+			}
 		}
 	}
 
