@@ -106,7 +106,7 @@
 		.glossary__desc {
 			width: 100%;
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
 			text-align: left;
@@ -115,7 +115,8 @@
 			margin: 0 !important;
 		}
 
-		.glossary__img {
+		.glossary__img,
+		picture {
 			// max-height: 0;
 			max-width: 0;
 			transform: scale(0);
@@ -126,10 +127,12 @@
 			overflow: visible;
 			transition: all 0.4s;
 
-			.glossary__img {
+			.glossary__img,
+			picture {
 				max-width: 100%;
 				transform: scale(1);
 				// max-height: 100%;
+				flex-shrink: 0;
 			}
 		}
 	}
