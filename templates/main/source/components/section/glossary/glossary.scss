@@ -96,12 +96,14 @@
 
 	&__li {
 		display: flex;
-		margin-top: 2rem;
+		margin-top: 24px;
 		height: 30px;
 		overflow: hidden;
 		transition: 0.4s;
 		flex-wrap: wrap;
 		align-items: center;
+		padding-bottom: 24px;
+
 
 
 		.glossary__b {
@@ -141,6 +143,7 @@
 			height: unset;
 			overflow: visible;
 			transition: all 0.4s;
+			border-bottom: 1px solid #eee;
 
 			.glossary__img,
 			picture {
