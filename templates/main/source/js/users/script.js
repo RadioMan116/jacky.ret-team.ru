@@ -2120,22 +2120,27 @@ breakpoints: {
 	});
 
 	if ($("[type=tel],[title=Телефон],.js-phone_mask").length) {
-		console.log('inputmask')
-		$("[title=Телефон],.js-phone_mask").attr('type', 'tel')
-		$("[title=Телефон],.js-phone_mask,[title=Телефон]").prop('required', true);
-		Inputmask.extendAliases({
-			'customAlias': {
-				mask: "+7 (999) 999-99-99",
-				oncomplete: function () {
-					$(this).removeClass('BadPols');
-				},
-				onincomplete: function () {
-					$(this).addClass('BadPols');
-					$(this).val('');
-				},
-			}
-		});
-		Inputmask("customAlias").mask("[type=tel]");
+		setTimeout(function () {
+			console.log('inputmask')
+			$("[title=Телефон],.js-phone_mask").attr('type', 'tel')
+			$("[title=Телефон],.js-phone_mask,[title=Телефон]").prop('required', true);
+			$("[title=Телефон],.js-phone_mask,[title=Телефон]").val('');
+
+			Inputmask.extendAliases({
+				'customAlias': {
+					mask: "+7 (999) 999-99-99",
+					oncomplete: function () {
+						$(this).removeClass('BadPols');
+					},
+					onincomplete: function () {
+						$(this).addClass('BadPols');
+						$(this).val('');
+					},
+				}
+			});
+			Inputmask("customAlias").mask("[type=tel]");
+
+		}, 300);
 	}
 	if ($('.page__title.content-top__title.content-top__title_top span').length > 0) {
 		$(".content-top").addClass("content-top__tags");
