@@ -2515,13 +2515,13 @@ $(window).on('load', function () {
 	}
 
 	if ($('a[data-fancybox="gallery"] img').length) {
-		$('a[data-fancybox="gallery"] img').eq(0).each(function () {
-			var img = new Image($(this));
-			img.src = $(this).attr('src');
-			if (img.height > 0) {
-				$(this).height(img.height)
-			}
-		});
+		// $('a[data-fancybox="gallery"] img').eq(0).each(function () {
+		// 	var img = new Image($(this));
+		// 	img.src = $(this).attr('src');
+		// 	if (img.height > 0) {
+		// 		$(this).height(img.height)
+		// 	}
+		// });
 		// setInterval(function () {
 		// 	$('a[data-fancybox="gallery"] img').each(function () {
 		// 		var img = new Image($(this));

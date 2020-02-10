@@ -110,7 +110,8 @@
 		height: 34px;
 		padding: 4px 14px 4px 14px;
 		border-radius: 3px;
-		background-color: #666666;
+		// background-color: #666666;
+		background-color: $base;
 		color: #ffffff;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
@@ -309,6 +310,8 @@
 		&__telephones {
 			margin: 0px;
 			width: 100%;
+			order: -1;
+			margin-bottom: 12px;
 
 			.l-abuse,
 			.footer__button {
