@@ -137,7 +137,7 @@
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 1;
-				text-decoration: line-through;
+				// text-decoration: line-through;
 				left: 0;
 				top: unset;
 				bottom: 0;
@@ -157,7 +157,7 @@
 			font-size: 12px;
 			font-weight: 500;
 			line-height: 24px;
-			text-decoration: line-through;
+			// text-decoration: line-through;
 			left: 0;
 			top: -20px;
 			white-space: nowrap;
@@ -281,7 +281,7 @@
 		background: #000 !important;
 
 		&-active {
-			background: #394791 !important;
+			background: $base !important;
 			box-sizing: border-box;
 		}
 	}
@@ -358,7 +358,7 @@
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 1;
-				text-decoration: line-through;
+				// text-decoration: line-through;
 				left: 0;
 				top: unset;
 				bottom: 0;
