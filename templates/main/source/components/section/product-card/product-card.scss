@@ -3181,7 +3181,7 @@
 		padding-left: 56px;
 		padding-top: 16px;
 		padding-bottom: 14px;
-		background: url('../images/big/truck.svg')no-repeat 4px center;
+		background: url('../images/big/truck.svg')no-repeat 0px center;
 		width: 100%;
 		border-top: 1px solid #f1f1f1;
 		border-bottom: 1px solid #f1f1f1;
@@ -3196,6 +3196,10 @@
 				font-family: Arial;
 				font-size: 14px;
 				line-height: 21px;
+
+				&:nth-child(2) {
+					display: none;
+				}
 			}
 
 			// .delivery__link
@@ -5491,7 +5495,7 @@
 			padding: 9px 0 9px 52px;
 
 			.delivery__info {
-				font-size: 12px;
+				// font-size: 12px;
 				line-height: 18px;
 
 				&:first-of-type {
