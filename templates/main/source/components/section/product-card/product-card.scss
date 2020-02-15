@@ -5569,7 +5569,8 @@
 					max-width: 100%;
 				}
 			}
-			.announcing__info{
+
+			.announcing__info {
 				font-size: 14px;
 			}
 		}
@@ -5587,6 +5588,10 @@
 				width: auto;
 				margin: -30% -2px 0;
 				background: white;
+			}
+
+			.abuse-popup__item {
+				height: unset !important;
 			}
 
 			.newsletter__title {
@@ -5624,7 +5629,7 @@
 			input[type=submit] {
 				margin-right: 0 !important;
 				width: 100%;
-				max-width: unset;
+				max-width: unset !important;
 			}
 
 			input[type=text] {
