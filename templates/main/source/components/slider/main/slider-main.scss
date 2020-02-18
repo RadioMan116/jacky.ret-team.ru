@@ -213,7 +213,7 @@
 		width: 100%;
 		z-index: 9;
 
-		.gallery__link img {
+		img {
 			width: 100%;
 			max-width: 100%;
 			height: auto;
@@ -650,14 +650,16 @@
 	.new-gallery {
 		height: auto;
 		max-height: unset;
-		*{
+
+		* {
 			transition: 0.4s;
 		}
 
 		.swiper-slide {
 			display: flex !important;
+
 			// overflow: visible !important;
-			.services__bg{
+			.services__bg {
 				display: none;
 			}
 		}
