@@ -337,6 +337,15 @@
 
 			.more-text {
 				position: absolute;
+				&:after {
+					border-bottom: 1px dashed $base;
+					content: '';
+					height: 1px;
+					position: absolute;
+					width: 85px;
+					bottom: 4px;
+
+				}
 			}
 
 
@@ -357,7 +366,16 @@
 			order: 5;
 			width: 100%;
 			margin-top: 10px;
-			border-bottom: 1px dashed $base;
+			position: relative;
+			// border-bottom: 1px dashed $base;
+			&:after {
+				border-bottom: 1px dashed $base;
+				content: '';
+				height: 1px;
+				position: absolute;
+				width: 59px;
+				bottom: 4px;
+			}
 		}
 	}
 
