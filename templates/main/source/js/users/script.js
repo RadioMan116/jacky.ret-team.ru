@@ -328,7 +328,7 @@ $(document).ready(function () {
 		// Optional parameters
 		// slidesPerGroup: 1,
 		slidesPerView: 1,
-		spaceBetween: 0,
+		spaceBetween: 5,
 		allowTouchMove: false,
 		// direction: "horizontal",
 		// loop: true,
