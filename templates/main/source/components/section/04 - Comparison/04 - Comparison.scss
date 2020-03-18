@@ -29,7 +29,7 @@
 	}
 
 	.special-offers__sale {
-		margin-top: auto;
+		margin-top: 0;
 		flex-grow: unset;
 
 		.special-offers__price {
@@ -77,7 +77,7 @@
 
 		td {
 			color: #2e2e2e;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 500;
 			// line-height: 30px;
@@ -235,7 +235,7 @@
 	&__link {
 		padding: 0px 14px;
 		color: #2e2e2e;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 25px;
 		position: relative;
@@ -292,7 +292,7 @@
 
 	.open-all {
 		color: $base;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 20px;
 		margin-top: auto;
@@ -457,6 +457,7 @@
 			font-weight: 400;
 			line-height: 26px;
 			width: 100%;
+			margin-bottom: auto;
 		}
 
 		.special-offers__pic {
@@ -555,7 +556,7 @@
 					// background: rebeccapurple;
 					background-color: #f8f8f8;
 					width: 1000%;
-					height: 106%;
+					height: calc(100% + 14px);
 					z-index: -1;
 					top: -11px;
 					left: -300%;
@@ -579,7 +580,7 @@
 			&.characteristic__row {
 				td {
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					font-weight: 700;
 					// line-height: 30px;
@@ -748,7 +749,7 @@
 					bottom: 75px;
 					left: 0px;
 					color: #d6d6d6;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 				}
 
@@ -818,7 +819,7 @@
 				width: 100%;
 				padding: 0 12px;
 				color: $base;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 1;
 			}
@@ -838,7 +839,7 @@
 				top: -15px;
 				left: 243px;
 				color: #d6d6d6;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 			}
 
@@ -970,7 +971,7 @@
 		&__text {
 			line-height: 1;
 			color: $base;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 20px;
 		}
@@ -1033,7 +1034,7 @@
 
 			.fixed-header__text {
 				color: $base;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 20px;
 			}
@@ -1102,10 +1103,10 @@
 					td {
 						padding: 0 0 0px 0 !important;
 						border: 0 !important;
-						font-family: Arial,sans-serif;
+						font-family: Arial, sans-serif;
 						font-size: 14px;
 						font-weight: 700;
-						line-height: 20px;
+						line-height: 1.2;
 
 
 						&:after {
@@ -1219,7 +1220,7 @@
 					border: 1px solid #d6d6d6;
 					background-color: #ffffff;
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					text-align: left;
 					justify-content: flex-start;
@@ -1261,7 +1262,7 @@
 				.diagram__name {
 					text-align: center;
 					color: $base;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					line-height: 20px;
 					padding: 0 6px;
@@ -1515,12 +1516,13 @@
 			padding-left: 30px;
 			background-position: 5px 0;
 			color: $base;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 		}
 
 		&__main tr.thead__comparison:before {
 			height: 239%;
+			display: none;
 		}
 
 		.comparison-menu__title {
