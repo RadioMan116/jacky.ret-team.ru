@@ -1389,12 +1389,14 @@
 				margin-bottom: 40px;
 				flex-basis: unset;
 			}
-			&__parent{
+
+			&__parent {
 				background: #f8f8f8;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 			}
+
 			&__article {
 				color: #212121;
 				font-family: "Roboto Condensed";
@@ -1402,9 +1404,10 @@
 				font-weight: 400;
 				line-height: 28px;
 				text-align: center;
-				padding:12px 0 ;
+				padding: 12px 0;
 			}
-			&__text{
+
+			&__text {
 				color: #666666;
 				font-family: Arial;
 				font-size: 14px;
@@ -3059,9 +3062,9 @@
 				font-size: 14px;
 				line-height: 21px;
 
-				&:nth-child(2) {
-					display: none;
-				}
+				// &:nth-child(2) {
+				// 	display: none;
+				// }
 			}
 
 			// .delivery__link
@@ -4888,6 +4891,7 @@
 				order: 11;
 				margin-bottom: 36px !important;
 			}
+
 			.gallery {
 				&__el {
 					width: 100%;
@@ -4895,12 +4899,14 @@
 					margin-bottom: 24px;
 					flex-basis: unset;
 				}
-				&__parent{
+
+				&__parent {
 					background: #f8f8f8;
 					display: flex;
 					flex-direction: column;
 					align-items: center;
 				}
+
 				&__article {
 					color: #212121;
 					font-family: "Roboto Condensed";
@@ -4908,9 +4914,10 @@
 					font-weight: 400;
 					line-height: 28px;
 					text-align: center;
-					padding:12px 0 ;
+					padding: 12px 0;
 				}
-				&__text{
+
+				&__text {
 					color: #666666;
 					font-family: Arial;
 					font-size: 14px;
@@ -5380,16 +5387,45 @@
 		}
 
 		.product-card__delivery {
-			// background: none;
-			// padding: 9px 0;
-			padding: 9px 0 9px 52px;
+			padding: 0 0px;
+			// background: url('../images/big/truck.svg') no-repeat 0 9px;
+			background: none;
+			min-height: 60px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+
+			// justify-content: center;
+			&:before {
+				content: url('../images/big/truck.svg');
+				height: 40px;
+				width: 40px;
+				margin-right: 12px;
+				margin-bottom: 9px;
+				margin-top: 9px;
+			}
 
 			.delivery__info {
 				font-size: 14px;
 				line-height: 18px;
 
+
+				&:last-of-type {
+					// line-height: 2;
+					margin-bottom: 9px;
+				}
+
 				&:first-of-type {
-					margin-bottom: 5px;
+					margin-bottom: 0px;
+					// padding-left: 52px;
+					// margin: auto 0;
+					width: calc(100% - 52px);
+
+					// a {
+					// 	margin: 0 3px;
+					// }
+
+
 				}
 			}
 		}
