@@ -121,12 +121,14 @@
 	&.main-tags {
 		margin-bottom: 41px;
 		position: relative;
+
 		// width: 1176px;
 		// max-width: 100%;
-		@media screen and (max-width: 1200px) {
+		@media screen and (max-width: 1200px) and (min-width: 768px) {
 			margin: 0 16px 41px;
 			max-width: 100%;
-			width: calc(100% - 32px);
+			width: -webkit-fill-available;
+			flex: 1 1 100%
 		}
 
 	}
