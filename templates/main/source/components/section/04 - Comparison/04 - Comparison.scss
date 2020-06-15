@@ -42,6 +42,14 @@
 			font-size: 20px;
 			font-weight: 700;
 			line-height: 24px;
+
+			.price__absolute {
+				top: 22px;
+
+				&:before {
+					bottom: 10px;
+				}
+			}
 		}
 	}
 
@@ -1528,6 +1536,8 @@
 
 		.special-offers__sale {
 			flex-direction: column;
+
+
 		}
 
 		.comparison .swiper__comparison {
@@ -1615,7 +1625,15 @@
 				width: 100%;
 				margin-top: 0;
 				flex-wrap: nowrap;
-				margin-bottom: 10px;
+				margin-bottom: 18px;
+
+				.price__absolute {
+					top: 16px;
+
+				&:before {
+					bottom: 11px;
+				}
+			}
 
 				.special-offers__rub {
 					color: #333333;
