@@ -72,7 +72,7 @@
 		.link-pop-glossary {
 			position: relative;
 			cursor: pointer;
-			width: 39.566px;
+			width: calc(100%/6);
 		}
 
 		.icons-prop-item {
@@ -1884,6 +1884,12 @@
 
 				&:hover {
 					box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
+				}
+
+				.link-pop-glossary {
+					position: relative;
+					cursor: pointer;
+					width: calc(100%/8);
 				}
 
 				margin-bottom: 8px;
