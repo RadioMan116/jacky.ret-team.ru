@@ -1,16 +1,16 @@
 .container {
+	box-sizing: border-box;
 	width: 100%;
-	width: -webkit-fill-available;
+	width: fill-available;
+	max-width: 1176px;
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 1176px;
-	box-sizing: border-box;
 
 	@media screen and (max-width: 1200px) {
-		margin: 0 16px;
+		flex: 1 1 100%;
+		width: fill-available;
 		max-width: 100%;
-		width: -webkit-fill-available;
-		flex: 1 1 100%
+		margin: 0 16px;
 	}
 
 	@media screen and (max-width: 480px) {
@@ -18,15 +18,15 @@
 	}
 
 	@media screen and (max-width: 320px) {
+		width: fill-available;
+		max-width: 100%;
 		margin: 0;
 		padding: 0 16px 0 !important;
-		max-width: 100%;
-		width: -webkit-fill-available;
 	}
 }
 
 .content .container {
 	display: flex;
-	padding: 0 0;
 	flex-wrap: wrap;
+	padding: 0 0;
 }
