@@ -4,6 +4,7 @@ $(document).ready(function () {
 		var button = document.getElementById(element),
 			menu = document.getElementById(menu),
 			menuList = document.querySelector(".menu"),
+			menuParent = document.querySelector('.header__blocks'),
 			menuBottom = document.getElementById("js-header__block_bottom");
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
@@ -16,12 +17,14 @@ $(document).ready(function () {
 				$("body").removeClass("fixed");
 				$("html").removeClass("js-height");
 				$(".header__overlay").hide();
+				menuParent.classList.remove("active");
 			} else {
 				button.parentNode.parentNode.classList.add("active");
 				button.className += " opened";
 				button.setAttribute("aria-expanded", "true");
 				menuBottom.classList.add("active");
 				menuList.classList.add("active");
+				menuParent.classList.add("active");
 				$("body").addClass("fixed");
 				$("html").addClass("js-height");
 			}
